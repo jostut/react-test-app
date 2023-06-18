@@ -14,7 +14,8 @@ export const getServerSideProps = async (context) => {
 export default function postPage(props) {
 	return (
 		<div>
-			from postPage {router.query.id} {props.hi}
+			<h1>{props?.post.title}</h1>
+			<p>{props?.post.body}</p>
 		</div>
 	);
 }
